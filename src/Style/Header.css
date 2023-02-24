@@ -1,0 +1,340 @@
+/*
+   @ version 15.02.2023
+*/
+
+.menu{
+    background-color: var(--mobile-menu-bg-color);
+    position: fixed;
+    height: var(--mobile-menu-height);
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-timing);
+    box-shadow: 0px -4px 10px var(--shadow-color);
+    z-index: 1;
+    }
+
+    
+    .menu .header{
+        z-index: 1;
+        width: 100vw;
+        height: var(--mobile-header-height);
+        font-family: 'Orbitron', sans-serif;
+        text-transform: lowercase;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: var(--mobile-header-height);
+        writing-mode:horizontal-tb;
+        text-orientation: upright;
+        position: fixed;
+        top: 0;
+        background-color:var(--mobile-menu-bg-color);
+        color:var(--mobile-menu-a-bg-color);
+        text-align: center;
+        box-shadow: 1px 1px 10px var(--shadow-color);
+    }
+    .menu .menu-list{
+        margin:0px;
+        padding: 0px;
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu .menu-list .menu-item{
+        font-size: 2rem;
+    }
+    .menu .menu-list .menu-item a, .menuButton{
+        text-decoration: none; 
+        color: var(--mobile-menu-a-bg-color);
+        padding:1rem;
+        height: var(--mobile-menu-height);
+    }
+    
+    .menu .menu-list .menu-item button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .menu .menu-list .menu-item a[info]:focus::after,
+.menu .menu-list .menu-item a[info]:hover::after,
+.menu .menu-list .menu-item button[info]:hover::after
+{
+    content: attr(info);
+    font-size: 1rem;
+    font-family: sans-serif;
+    width: 5rem;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: var(--desktop-menu-a-title-bg-color);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 90%;
+    margin-left: -3.5rem;;
+    left: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menu .menu-list .menu-item:nth-child(3) a[info]:focus::after,
+  .menu .menu-list .menu-item:nth-child(3) a[info]:hover::after{
+    content: attr(info);
+    font-size: 1rem;
+    font-family: sans-serif;
+    width: 5rem;
+    height: 4rem;
+    line-height: 2rem;
+    background-color: var(--desktop-menu-a-title-bg-color);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 90%;
+    margin-left: -3.5rem;;
+    left: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+    .menu .menu-list .menu-item .active{
+        color: var(--nav-a-active-color);
+        background-color: var(--nav-a-active-bg-color);
+        
+    }
+
+    .menu .menu-list .menu-item a[info].active:focus::after,
+.menu .menu-list .menu-item a[info].active:hover::after
+{
+    background-color: var(--nav-a-active-color);
+}
+/*---------------------------------- Landscape Version -------------------------------*/
+
+    @media (orientation:landscape){
+        .menu{
+    height: 100%;
+    padding: 0;
+    width: var(--desktop-menu-width);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--mobile-menu-bg-color);
+    transition: none;
+    box-shadow: 1px 1px 10px rgba(10, 63, 119, 0.349);
+}
+
+
+.menu .header{
+    display: inline;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width:var(--desktop-menu-header-width);
+    color: var(--mobile-menu-bg-color);
+    background-color:var(--mobile-menu-a-bg-color) ;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    line-height: var(--desktop-menu-header-width);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: calc(var(--desktop-menu-header-width) - .75rem);
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.menu .menu-list{
+    margin: 0;
+    padding: 0;
+    /* border-left: 1px solid rgb(255, 199, 87); */
+    position: fixed;
+    left: var(--desktop-menu-header-width);
+    list-style-type: none;
+    height: 100%;
+    width: var(--desktop-menu-list-width);
+    background-color: var(--mobile-menu-bg-color);
+    transform: rotate(0deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 0%;
+    transition: none;
+    z-index: 2;
+}
+
+.menu  .menu-list .menu-item{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    pointer-events: all;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.menu .menu-list .menu-item a{
+    position: relative;
+    text-align: center;
+    border-radius:0%;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--mobile-menu-a-bg-color);
+    box-shadow: none;
+    padding: 1rem;
+    width: 4rem;   
+}
+
+.menu .menu-list .menu-item a[info]:focus::after,
+.menu .menu-list .menu-item a[info]:hover::after,
+.menu .menu-list .menu-item button[info]:hover::after{
+    content: attr(info);
+    font-size: 1rem;
+    width: 5rem;
+    font-family: sans-serif;
+    line-height: 2rem;
+    height: 2rem;
+    background-color: var(--desktop-menu-a-title-bg-color);
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    left: 110%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    bottom: auto;
+    margin-left: 0;
+  }
+
+  .menu .menu-list .menu-item:nth-child(3) a[info]:focus::after,
+  .menu .menu-list .menu-item:nth-child(3) a[info]:hover::after{
+    content: attr(info);
+    font-size: 1rem;
+    width: 8rem;
+    font-family: sans-serif;
+    line-height: 2rem;
+    height: 2rem;
+    background-color: var(--desktop-menu-a-title-bg-color);
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    left: 110%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    bottom: auto;
+    margin-left: 0;
+  }
+
+
+
+  .menu .menu-list .menu-item .active:hover,
+    .menu .menu-list .menu-item .active:focus{
+        background-color: none;
+    }
+  .menu .menu-list .menu-item a:not(.active):focus,
+.menu .menu-list .menu-item a:not(.active):hover,
+.menu .menu-list .menu-item button:hover{
+    background-color: rgba(102, 153, 246, 0.185);
+}
+
+.menu .menu-list .menu-item .active{
+    border: none;
+    border-right: 5px solid var(--nav-a-active-color);
+    padding-right: calc(1rem - 5px);
+}
+.menu .menu-list .menu-item a[info].active:focus::after,
+.menu .menu-list .menu-item a[info].active:hover::after
+{
+    background-color: var(--nav-a-active-color);
+    left: calc(110% + 5px);
+}
+
+}
+
+ /* The side navigation menu */
+ .mininav {
+    height: 0px; /* 100% Full-height */
+    width:0px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 0; /* Stay on top */
+    bottom: 4.5rem;
+    right: .5rem;
+    background-color: rgb(148, 184, 231);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.25s; /* 0.5 second transition effect to slide in the mininav */ 
+    /* box-shadow: 10px -4px 10px var(--shadow-color);  */
+    
+    border: none;
+    
+  }
+
+.mininav:focus,
+.mininav:focus-within{
+  height: 13rem;
+    width: 11rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.25rem;
+    
+}
+
+  @media (orientation:landscape){
+    .mininav {
+        width: 0;
+        left: 6.5rem;
+        bottom: .5rem;
+        border: none;
+    }
+     .mininav:focus,
+    .mininav:focus-within{
+      height: 13rem;
+        width: 11rem;
+        padding: 0.25rem;
+    }
+  }
+
+  .mininav a {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(0, 24, 32);
+    display: block;
+    transition: 0.3s;
+    font-family: 'Raleway', sans-serif;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .mininav a:not(.active):hover{
+    color: black;
+    background-color: var(--mobile-menu-a-bg-color);  
+  }
+  .mininav .active {
+    color: white;
+    background-color: var(--mobile-menu-a-bg-color);
+  }

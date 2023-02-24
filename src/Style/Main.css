@@ -1,0 +1,42 @@
+svg{
+    height: 35%;
+    width: 35%;
+}
+
+
+
+main{
+    min-height: var(--full-height);
+    min-width: var(--full-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.card{
+    height: calc(var(--full-height) * .95);
+    width: calc(var(--full-width) * .95);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px #c7c7c7 inset,4px 4px 4px #888888; 
+}
+
+
+h1{font-family: 'Raleway', sans-serif;
+color: #1876f2;}
+
+.article{
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

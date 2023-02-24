@@ -1,0 +1,216 @@
+:root{
+    --background-color-primery:white;
+    --border-color:#ccc;
+}
+
+
+div.calculator{
+    min-height: 100%;
+    width: 100%;
+    
+}
+
+
+.calc{
+    width:100%;
+    height:calc(var(--full-height) * .9);
+    /* height: 100%; */
+    border-radius: .8rem;
+    background-color: transparent;
+    font-family:sans-serif;
+    /* display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly; */
+    /* background-color: red; */
+}
+
+.calc-upper{
+    width: 100%;
+}
+
+
+
+.from-opt,.to-opt{
+    width: 100%;
+    padding: 0.8rem;
+}
+
+.from-opt div,.to-opt div{
+    padding: .4rem;
+}
+
+.from-opt select,.to-opt select{
+    width: 100%;
+    padding: .6rem;
+    cursor: pointer;
+    border-color: var(--border-color);
+    font-size: 1rem;
+    background-color:white;
+    font-family:sans-serif;
+}
+
+.input-group{
+    padding: .8rem;
+    padding-bottom:0.3rem ;
+    height: auto;
+    
+}
+
+.input-group .input-label{
+    width: 100%;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    /* background-color: white; */
+    box-shadow:4px 4px 4px #c7c7c7;
+
+}
+.input-group span{
+    /* background-color:white; */
+    /* padding: .5rem; */
+    font-size: 1rem;
+    height: 100%;
+    color: black;
+    background-color: #888888;
+}
+.input-group textarea{
+    /* padding: .5rem; */
+    font-size: 1rem;
+    width: calc(100% - 2.35rem);
+    height: auto;
+    border: none;
+    margin: 0;
+    /* background-color:white; */
+    font-family:sans-serif;
+    resize: none;
+    
+}
+
+.input-group div{padding: .4rem;}
+
+.output-group{
+    width: 100%;
+    padding: .80rem;
+    /* padding-bottom: 1.6rem; */
+}
+
+.output-group textarea{
+    width: 50%;
+    font-size: 1rem;
+}
+
+.btn-group{
+    width: 100%;
+    padding: .80rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0rem;
+    
+}
+.btn-group button, .output-group button{
+    padding: 1rem;
+    cursor: pointer;
+    width: 32.5%;
+    border-width: 0px;
+    /* border-color: white; */
+    color: black;
+    /* color: white; */
+    font-family:sans-serif;
+    box-shadow: 4px 4px 4px #c7c7c7 inset,4px 4px 4px #888888;
+    border-radius: .5rem;
+}
+.btn-group button:active, .output-group button:active{box-shadow: 4px 4px 4px #888888 inset,4px 4px 4px #c7c7c7}
+
+/* .btn-group button:nth-child(1){background-color: #4CAF50;}
+.btn-group button:nth-child(2){background-color: #f44336;;}
+.btn-group button:nth-child(3){background-color: #008CBA;;} */
+
+
+.btn-group button:focus,.btn-group button:hover,.output-group button:focus,.output-group button:hover{filter: brightness(85%);}
+
+.output-group button{width: 100%;color: black;}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.output-group textarea{
+    width: 100%;
+    border-color: var(--border-color);
+    background-color:white;
+    font-family:sans-serif;
+    padding: 0.4rem;
+    height: 10rem;
+    width: 100%;
+}
+.input-label:focus-within{
+    /* outline-style: solid;
+    outline-color: black; */
+    outline-width: 1px;
+    box-shadow: 4px 4px 4px #c7c7c7 inset,4px 4px 4px #888888;
+}
+
+.false{
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 1px;
+    box-shadow: 0 0 2rem #bf3d26;
+}
+
+@media only screen and (min-width: 640px) {
+    .calc{display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-evenly;}
+
+    .calc-upper{
+        width: 50%;
+        
+    height: 100%;
+    /* background-color: aquamarine; */
+
+    }
+    .output-group{
+        width: 50%;
+        height: 100%;
+    }
+    .output-group button{
+        height: 3rem;
+    }
+    .output-group textarea{
+        width: 100%;
+        height: calc(100% - 3.5rem);
+    }
+
+
+
+    .from-opt,.to-opt{
+        height: 15%;
+    }
+
+    .btn-group{
+        height: 4rem;
+    }
+
+
+
+
+
+
+    .input-group {
+        height:calc(100% - calc(30.5% + 4rem));
+    }
+
+.input-group .input-label{
+    height: 90%;
+    /* background-color: #bf3d26; */
+}
+    
+    .input-group .input-label textarea{
+        height: 100%;
+    }
+    
+  }
