@@ -10,7 +10,11 @@ import Temprature from './Pages/Converter/Temprature';
 import Length from './Pages/Converter/Length';
 import {Route,Routes} from 'react-router-dom';
 import Converter from './Pages/Converter';
-import {ConverterMenuInfo,NumberSystemMenuInfo} from './Data/Data';
+import Factor from './Pages/Basic Calc/Factor';
+import LCM from './Pages/Basic Calc/LCM';
+import HCF from './Pages/Basic Calc/HCF';
+import BasicCalc from './Pages/BasicCalc';
+import {ConverterMenuInfo,NumberSystemMenuInfo,BasicCalcMenuInfo} from './Data/Data';
 
 function App() {
   // const ConverterMenuInfo=[
@@ -23,7 +27,12 @@ function App() {
         <Routes>
         <Route exact path="/" element={<Temp/>}/>
         
-        <Route exact path="/basic" element={<Temp/>}/>
+        <Route exact path="/basic" element={<Wrapper ButtonInfo={BasicCalcMenuInfo} imgSrc={logo} label={"Basic"}/>}>
+        <Route path="" element={<BasicCalc/>}/>
+          <Route path="hcf" element={<HCF/>}/>
+          <Route path="lcm" element={<LCM/>}/>
+          <Route path="factor" element={<Factor/>}/>
+        </Route>  
         
         <Route exact path="/converter" element={<Wrapper ButtonInfo={ConverterMenuInfo} imgSrc={logo} label={"Converter"}/>}>
         <Route path="" element={<Converter/>}/>
