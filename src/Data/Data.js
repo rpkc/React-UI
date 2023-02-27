@@ -4,3 +4,6 @@ const ConverterMenuInfo=[
   const NumberSystemMenuInfo=[
     {label:"Base Converter",link:"base-converter"},{label:"Base Calculator",link:"base-calculator"}
   ]
+
+
+  export {ConverterMenuInfo,NumberSystemMenuInfo};

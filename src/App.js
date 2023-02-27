@@ -10,14 +10,15 @@ import Temprature from './Pages/Converter/Temprature';
 import Length from './Pages/Converter/Length';
 import {Route,Routes} from 'react-router-dom';
 import Converter from './Pages/Converter';
+import {ConverterMenuInfo,NumberSystemMenuInfo} from './Data/Data';
 
 function App() {
-  const ConverterMenuInfo=[
-    {label:"Temprature",link:"temp"},{label:"Length",link:"length"}
-  ]
-  const NumberSystemMenuInfo=[
-    {label:"Base Converter",link:"base-converter"},{label:"Base Calculator",link:"base-calculator"}
-  ]
+  // const ConverterMenuInfo=[
+  //   {label:"Temprature",link:"temp"},{label:"Length",link:"length"}
+  // ]
+  // const NumberSystemMenuInfo=[
+  //   {label:"Base Converter",link:"base-converter"},{label:"Base Calculator",link:"base-calculator"}
+  // ]
   return (
         <Routes>
         <Route exact path="/" element={<Temp/>}/>
