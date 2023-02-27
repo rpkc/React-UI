@@ -23,9 +23,7 @@ src
 │   │   Temp.js -------------------------------- Temporary page to display message
 |   | 
 |   ├───Basic Calc
-│   │       Factor.js -------------------------- Factor Page
-│   │       HCF.js ----------------------------- HCF page
-│   │       LCM.js ----------------------------- LCM page
+│   │       
 │   |
 |   ├───Converter
 │   │       Length.js -------------------------- Length Converter Page
