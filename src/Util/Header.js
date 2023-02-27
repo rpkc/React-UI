@@ -15,7 +15,7 @@ return(
     <div className="menu">
         <div className="header">C A L C U L O N</div>
         <ul className="menu-list">
-          <li className="menu-item"><NavLink to='/calc' info="Calc" activeClassName="active"><i class="fa fa-calculator" aria-hidden="true"></i></NavLink></li>
+          <li className="menu-item"><NavLink to='/basic' info="Basic" activeClassName="active"><i class="fa fa-calculator" aria-hidden="true"></i></NavLink></li>
           <li className="menu-item"><NavLink to='/converter' info="Converter" activeClassName="active"><i class="fa fa-exchange" aria-hidden="true"></i></NavLink></li>
           <li className="menu-item"><NavLink to='/number-system' info="Number System" activeClassName="active"><i class="fa fa-microchip" aria-hidden="true"></i></NavLink></li>
           <li className="menu-item"><button className="menuButton" onClick={openMenu} info="Menu"><i class="fa fa-th" aria-hidden="true"></i></button></li>

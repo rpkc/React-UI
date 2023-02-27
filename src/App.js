@@ -22,7 +22,7 @@ function App() {
         <Routes>
         <Route exact path="/" element={<Temp/>}/>
         
-        <Route exact path="/calc" element={<Temp/>}/>
+        <Route exact path="/basic" element={<Temp/>}/>
         
         <Route exact path="/converter" element={<Wrapper ButtonInfo={ConverterMenuInfo} imgSrc={logo} label={"Converter"}/>}>
         <Route path="" element={<Converter/>}/>
