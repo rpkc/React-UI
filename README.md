@@ -1,5 +1,8 @@
+<img src="https://raw.githubusercontent.com/rpkc/Calculon/main/src/Image/favicon.png" height="100px" width="100px"/>
+
 # Calculon
 Currently working on UI
+
 ## * File arrangements 👇 👇 👇 👇 👇 👇
 <pre>
 src
@@ -18,6 +21,7 @@ src
 │
 ├───Pages
 │   │   404.js --------------------------------- Not Found Page
+|   |   BasicCalc.js --------------------------- Basic Calculator Page
 │   │   Converter.js --------------------------- Converter main page
 │   │   NumberSystem.js ------------------------ Number System main page
 │   │   Temp.js -------------------------------- Temporary page to display message
