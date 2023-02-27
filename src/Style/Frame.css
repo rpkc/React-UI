@@ -2,7 +2,7 @@
     --left-pane-width:244px;
 }
 
-div.wrapper{
+div.frame{
     
     height: var(--full-height);
     width: var(--full-width);

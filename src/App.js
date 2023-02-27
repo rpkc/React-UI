@@ -1,7 +1,7 @@
 import React from 'react';
 import Temp from './Pages/Temp';
 import NumberSystem from './Pages/NumberSystem';
-import Wrapper from './Util/Wrapper';
+import Frame from './Util/Frame';
 import logo from './Image/favicon.png';
 import Page404 from './Pages/404';
 import BaseCalc from './Pages/Number System/BaseCalc';
@@ -27,21 +27,21 @@ function App() {
         <Routes>
         <Route exact path="/" element={<Temp/>}/>
         
-        <Route exact path="/basic-calulator" element={<Wrapper ButtonInfo={BasicCalcMenuInfo} imgSrc={logo} label={"Basic Calculator"}/>}>
+        <Route exact path="/basic-calulator" element={<Frame ButtonInfo={BasicCalcMenuInfo} imgSrc={logo} label={"Basic Calculator"}/>}>
         <Route path="" element={<BasicCalc/>}/>
           <Route path="hcf" element={<HCF/>}/>
           <Route path="lcm" element={<LCM/>}/>
           <Route path="factor" element={<Factor/>}/>
         </Route>  
         
-        <Route exact path="/converter" element={<Wrapper ButtonInfo={ConverterMenuInfo} imgSrc={logo} label={"Converter"}/>}>
+        <Route exact path="/converter" element={<Frame ButtonInfo={ConverterMenuInfo} imgSrc={logo} label={"Converter"}/>}>
         <Route path="" element={<Converter/>}/>
           <Route path="temp" element={<Temprature/>}/>
           <Route path="length" element={<Length/>}/>
         </Route>  
 
 
-        <Route exact path="/number-system/" element={<Wrapper ButtonInfo={NumberSystemMenuInfo} imgSrc={logo} label={"Number System"}/>}>
+        <Route exact path="/number-system/" element={<Frame ButtonInfo={NumberSystemMenuInfo} imgSrc={logo} label={"Number System"}/>}>
         <Route path="" element={<NumberSystem/>}/>
           <Route path="base-converter" element={<BaseConv/>}/>
           <Route path="base-calculator" element={<BaseCalc/>}/>
