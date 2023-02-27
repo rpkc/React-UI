@@ -27,7 +27,7 @@ function App() {
         <Routes>
         <Route exact path="/" element={<Temp/>}/>
         
-        <Route exact path="/basic" element={<Wrapper ButtonInfo={BasicCalcMenuInfo} imgSrc={logo} label={"Basic"}/>}>
+        <Route exact path="/basic-calulator" element={<Wrapper ButtonInfo={BasicCalcMenuInfo} imgSrc={logo} label={"Basic"}/>}>
         <Route path="" element={<BasicCalc/>}/>
           <Route path="hcf" element={<HCF/>}/>
           <Route path="lcm" element={<LCM/>}/>
