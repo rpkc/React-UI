@@ -1,7 +1,7 @@
 import React from "react";
 import '../Style/Frame.css';
 import LeftMenu from './LeftMenu';
-import RightContainer from './RightContainer';
+import RightContainer from './RightMain';
 export default function Wrapper(prop){
 
     return(
