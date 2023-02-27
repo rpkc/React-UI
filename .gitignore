@@ -23,4 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 esses.txt
-
+./firebase
+.firebase
+/firebase
+.firebase/*
