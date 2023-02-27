@@ -10,6 +10,9 @@ src
 │   reportWebVitals.js 
 │   setupTests.js 
 │
+├───Data
+│       Data.js -------------------------------- Data for some Dynamic components
+|   
 ├───Image
 │       favicon.png ---------------------------- Logo
 │
