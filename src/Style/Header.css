@@ -87,8 +87,8 @@
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .menu .menu-list .menu-item:nth-child(3) a[info]:focus::after,
-  .menu .menu-list .menu-item:nth-child(3) a[info]:hover::after{
+  .menu .menu-list .menu-item:nth-child(odd) a[info]:focus::after,
+  .menu .menu-list .menu-item:nth-child(odd) a[info]:hover::after{
     content: attr(info);
     font-size: 1rem;
     font-family: sans-serif;
@@ -231,8 +231,8 @@
     margin-left: 0;
   }
 
-  .menu .menu-list .menu-item:nth-child(3) a[info]:focus::after,
-  .menu .menu-list .menu-item:nth-child(3) a[info]:hover::after{
+  .menu .menu-list .menu-item:nth-child(odd) a[info]:focus::after,
+  .menu .menu-list .menu-item:nth-child(odd) a[info]:hover::after{
     content: attr(info);
     font-size: 1rem;
     width: 8rem;
