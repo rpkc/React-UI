@@ -21,8 +21,13 @@ src
 │   │   Converter.js --------------------------- Converter main page
 │   │   NumberSystem.js ------------------------ Number System main page
 │   │   Temp.js -------------------------------- Temporary page to display message
-│   │
-│   ├───Converter
+|   | 
+|   ├───Basic Calc
+│   │       Factor.js -------------------------- Factor Page
+│   │       HCF.js ----------------------------- HCF page
+│   │       LCM.js ----------------------------- LCM page
+│   |
+|   ├───Converter
 │   │       Length.js -------------------------- Length Converter Page
 │   │       Temprature.js ---------------------- Temprature Converter Page
 │   │
