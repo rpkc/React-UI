@@ -18,7 +18,6 @@ main{
 .card{
     height: calc(var(--full-height) * .95);
     width: calc(var(--full-width) * .95);
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;

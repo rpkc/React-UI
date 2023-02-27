@@ -1,4 +1,5 @@
 import '../Style/Main.css';
+//it will the body for every element
 export default function Main(prop){
     switch(prop.type)
     {
