@@ -1,15 +1,18 @@
 import React from 'react';
-import {Route,Routes} from 'react-router-dom';
+import {Route,Routes,useLocation} from 'react-router-dom';
 import logo from './Image/favicon.png';
 import {Frame} from './Util/Util';
 import {Page404,BasicCalc,Converter,
         Temp,Factor,HCF,LCM,Temprature,
         Length,BaseCalc,BaseConv,NumberSystem,Semi404} from './Pages/Pages';
 import {ConverterMenuInfo,NumberSystemMenuInfo,BasicCalcMenuInfo} from './Data/Data';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  const location=useLocation();
   return (
-        <Routes>
+    <AnimatePresence initial={false} exitBeforeEnter={true}>
+        <Routes location={location} key={location.pathname}>
         <Route exact path="/" element={<Temp/>}/>
         
         <Route exact path="/basic-calulator" element={<Frame ButtonInfo={BasicCalcMenuInfo} imgSrc={logo} label={"Basic Calculator"}/>}>
@@ -38,6 +41,7 @@ function App() {
         <Route exact path="/projects" element={<Temp/>}/> 
         <Route path='*' element={<Page404/>}/>
         </Routes>
+        </AnimatePresence>
   );
 }
 

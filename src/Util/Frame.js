@@ -1,13 +1,14 @@
 import React from "react";
 import '../Style/Frame.css';
 import LeftMenu from './LeftMenu';
-import RightContainer from './RightMain';
-export default function Wrapper(prop){
+import RightMain from './RightMain';
+
+export default function Frame(prop){
 
     return(
         <div className="frame">
             <LeftMenu ButtonInfo={prop.ButtonInfo} imgSrc={prop.imgSrc} lebel={prop.label}/>
-            <RightContainer/>
+            <RightMain/>
         </div>
     );
 }

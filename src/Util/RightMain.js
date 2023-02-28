@@ -2,11 +2,16 @@
 // Sidenav Mobile Menu 
 import React from "react";
 import {Outlet} from "react-router-dom";
-export default function RightContainer()
+import { motion } from 'framer-motion';
+export default function RightMain()
 {
     return(
-        <div className="right-pane">
+        <motion.div className="right-pane" 
+        initial={{x:"-50vw",opacity:0,transition:{duration:.5},zIndex:0}}
+        animate={{x:"0",opacity:1,transition:{duration:.5}}}
+        exit={{x:"50vw",opacity:0,transition:{duration:.5}}}
+        > 
             <Outlet/>
-        </div>
+        </motion.div>
     );
 }
