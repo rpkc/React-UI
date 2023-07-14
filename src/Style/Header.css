@@ -21,6 +21,7 @@
         z-index: 1;
         width: 100vw;
         height: var(--mobile-header-height);
+        letter-spacing: 1rem;
         font-family: 'Orbitron', sans-serif;
         text-transform: lowercase;
         font-size: 1.5rem;

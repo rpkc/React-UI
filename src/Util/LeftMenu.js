@@ -27,10 +27,12 @@ export default function LeftMenu(props){
     return(
         
             <div className={`left-pane${openLeftPane ? " close" : ""}`}>
-              <button className='left-pane-menu-btn' onClick={openLeftPaneFun}>
-            <i class={`fa ${leftMenuIcon ? "fa-times":"fa-bars"}`} aria-hidden="true"></i>
-            </button>
               {/* Menu button */}
+              
+              <button className='left-pane-menu-btn' onClick={openLeftPaneFun}>
+                <i class={`fa ${leftMenuIcon ? "fa-times":"fa-bars"}`} aria-hidden="true"></i>
+              </button>
+              
               <div className='logo-icon' >
               <img src={props.imgSrc} alt="calculon"/>
               </div>

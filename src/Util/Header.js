@@ -13,7 +13,7 @@ export default function Header(){
 return(
   // <div>
     <div className="menu">
-        <div className="header">C A L C U L O N</div>
+        <div className="header">COMPTOMETER</div>
         <ul className="menu-list">
           <li className="menu-item"><NavLink to='/basic-calulator' info="Basic Calculator" activeClassName="active"><i class="fa fa-calculator" aria-hidden="true"></i></NavLink></li>
           <li className="menu-item"><NavLink to='/converter' info="Converter" activeClassName="active"><i class="fa fa-exchange" aria-hidden="true"></i></NavLink></li>
