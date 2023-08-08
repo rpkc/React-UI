@@ -89,25 +89,9 @@
 
   .menu .menu-list .menu-item:first-child a[info]:focus::after,
   .menu .menu-list .menu-item:first-child a[info]:hover::after{
-    content: attr(info);
-    font-size: 1rem;
-    font-family: sans-serif;
-    width: 5rem;
-    height: 4rem;
-    line-height: 2rem;
-    background-color: var(--desktop-menu-a-title-bg-color);
-    color: #ffffff;
-    text-align: center;
-    border-radius: 0.25rem;
-    padding: 0;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: absolute;
-    z-index: 1;
-    bottom: 90%;
-    margin-left: -3.5rem;;
-    left: auto;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    height: 2rem;
+    width: 6rem;
   }
 
 
@@ -230,30 +214,6 @@
     bottom: auto;
     margin-left: 0;
   }
-
-  .menu .menu-list .menu-item:first-child a[info]:focus::after,
-  .menu .menu-list .menu-item:first-child a[info]:hover::after{
-    content: attr(info);
-    font-size: 1rem;
-    width: 8rem;
-    font-family: sans-serif;
-    line-height: 2rem;
-    height: 2rem;
-    background-color: var(--desktop-menu-a-title-bg-color);
-    text-align: center;
-    border-radius: 0.25rem;
-    padding: 0;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: absolute;
-    z-index: 1;
-    left: 110%;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    bottom: auto;
-    margin-left: 0;
-  }
-
-
 
   .menu .menu-list .menu-item .active:hover,
     .menu .menu-list .menu-item .active:focus{
