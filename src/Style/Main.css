@@ -18,11 +18,21 @@ main{
 .card{
     height: calc(var(--full-height) * .95);
     width: calc(var(--full-width) * .95);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 4px 4px 4px #c7c7c7 inset,4px 4px 4px #888888; 
+}
+
+
+@media screen and (min-width: 900px){
+    .card{
+        width: 90vw ;
+        height: 95vh;
+    }
+    
 }
 
 

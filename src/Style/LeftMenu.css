@@ -55,7 +55,7 @@ div.left-pane h4{
 
     div.left-pane{
         width:var(--left-pane-width);
-    height: 90%;
+    height: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -72,7 +72,7 @@ div.left-pane h4{
             justify-content: center;
             align-items: center;
             width:244px;
-            height: 90%;
+            height: 95%;
         left: 0;}
 }
 
