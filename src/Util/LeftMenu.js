@@ -4,7 +4,6 @@ import React from "react";
 import '../Style/LeftMenu.css';
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import { motion } from 'framer-motion';
 
 export default function LeftMenu(props){
     const [openLeftPane,setOpenLeftPane]=useState(true); // open-close menu
