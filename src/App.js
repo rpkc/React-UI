@@ -2,8 +2,8 @@ import React from 'react';
 import {Route,Routes,useLocation} from 'react-router-dom';
 import logo from './Image/favicon.png';
 import {Frame} from './Util/Util';
-import {Page404,Temp,BaseCalc,BaseConv,NumberSystem,Semi404} from './Pages/Pages';
-import {NumberSystemMenuInfo} from './Data/Data';
+import {Page404,Temp,BaseCalc,BaseConv,Calculator,Semi404} from './Pages/Pages';
+import {CalculatorMenuInfo} from './Data/Data';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
         <Routes location={location} key={location.pathname}>
         <Route exact path="/" element={<Temp/>}/>
         
-        <Route exact path="/number-system" element={<Frame ButtonInfo={NumberSystemMenuInfo} imgSrc={logo} label={"Number System"}/>}>
-        <Route path="" element={<NumberSystem/>}/>
+        <Route exact path="/calculator" element={<Frame ButtonInfo={CalculatorMenuInfo} imgSrc={logo} label={"Calculator"}/>}>
+        <Route path="" element={<Calculator/>}/>
           <Route path="base-calculator" element={<BaseCalc/>}/>
           <Route path="base-converter" element={<BaseConv/>}/>
           <Route path="*" element={<Semi404/>}/>

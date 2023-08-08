@@ -1,6 +1,6 @@
 import '../Style/temp.css';
 
-export default function NumberSystem(){
+export default function Calculator(){
 
 
 return (
