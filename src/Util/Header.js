@@ -16,8 +16,8 @@ return(
         <div className="header">C A L C U L O N</div>
         <ul className="menu-list">
           <li className="menu-item"><NavLink to='/number-system' info="Number System" activeClassName="active"><i class="fa fa-calculator" aria-hidden="true"></i></NavLink></li>
-          <li className="menu-item"><NavLink to='/converter' info="Converter" activeClassName="active"><i class="fa fa-exchange" aria-hidden="true"></i></NavLink></li>
-          <li className="menu-item"><NavLink to='/number-system-1' info="Number System" activeClassName="active"><i class="fa fa-microchip" aria-hidden="true"></i></NavLink></li>
+          <li className="menu-item"><NavLink to='/archive' info="Archives" activeClassName="active"><i class="fa fa-archive" aria-hidden="true"></i></NavLink></li>
+          <li className="menu-item"><NavLink to='/projects' info="Projects" activeClassName="active"><i class="fa fa-microchip" aria-hidden="true"></i></NavLink></li>
           <li className="menu-item"><button className="menuButton" onClick={openMenu} info="Menu"><i class="fa fa-th" aria-hidden="true"></i></button></li>
         </ul>
         <div id="miniNav" class="mininav" tabIndex={0}>
