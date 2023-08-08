@@ -4,6 +4,7 @@ import React from "react";
 import '../Style/LeftMenu.css';
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { motion } from 'framer-motion';
 
 export default function LeftMenu(props){
     const [openLeftPane,setOpenLeftPane]=useState(true); // open-close menu
@@ -25,14 +26,16 @@ export default function LeftMenu(props){
       )
 
     return(
-        
-            <div className={`left-pane${openLeftPane ? " close" : ""}`}>
-              {/* Menu button */}
+      <>
+        {/* Menu button */}
               
-              <button className='left-pane-menu-btn' onClick={openLeftPaneFun}>
+        <button className='left-pane-menu-btn' onClick={openLeftPaneFun}>
                 <i class={`fa ${leftMenuIcon ? "fa-times":"fa-bars"}`} aria-hidden="true"></i>
               </button>
-              
+
+              <div className={`left-pane${openLeftPane ? " close" : ""}`}
+        > 
+              {/* <div className={`left-pane${openLeftPane ? " close" : ""}`}> */}
               <div className='logo-icon' >
               <img src={props.imgSrc} alt="calculon"/>
               </div>
@@ -42,6 +45,9 @@ export default function LeftMenu(props){
               <ul className="int-menu">
               {DisplayData}
                 </ul>
-            </div>
+            {/* </motion.div>
+             */}
+             </div>
+            </>
     );
 }
