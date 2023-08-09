@@ -4,7 +4,7 @@
 
 div.left-pane{
     width:var(--left-pane-width);
-    height: 95vh;
+    height: 95%;
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(0, 0, 0, 0.322);
     border-radius: 10px;
@@ -76,11 +76,7 @@ div.left-pane h4{
         left: 0;}
 }
 
-@media screen and (min-width: 900px){
-    .left-pane.close .int-menu{
-        display: block;
-    }
-}
+
 
 .int-menu{
     margin-top: 2rem;
@@ -91,7 +87,11 @@ div.left-pane h4{
    padding: 0;
    
 }
-
+@media screen and (min-width: 900px){
+    .left-pane.close .int-menu{
+        display: block;
+    }
+}
 
 
 .int-menu:focus,.int-menu:hover{
