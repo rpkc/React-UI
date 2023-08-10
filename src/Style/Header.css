@@ -254,7 +254,8 @@
     z-index: 0; /* Stay on top */
     bottom: 4.5rem;
     right: .5rem;
-    background-color: rgb(148, 184, 231);
+    background-color: white;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.25s; /* 0.5 second transition effect to slide in the mininav */ 
     /* box-shadow: 10px -4px 10px var(--shadow-color);  */
@@ -267,7 +268,7 @@
 .mininav:focus-within{
   height: 13rem;
     width: 11rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(214, 139, 139, 0.2);
     padding: 0.25rem;
     
 }
@@ -291,17 +292,18 @@
     padding: 1rem;
     text-decoration: none;
     font-size: 1.5rem;
-    color: rgb(0, 24, 32);
+    color: var(--mobile-menu-a-bg-color);
     display: block;
     transition: 0.3s;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 0.25rem;;
   }
   /* When you mouse over the navigation links, change their color */
   .mininav a:not(.active):hover{
-    color: black;
-    background-color: var(--mobile-menu-a-bg-color);  
+    color: var(--mobile-menu-a-bg-color);
+    background-color: rgba(102, 153, 246, 0.185);  
   }
   .mininav .active {
-    color: white;
-    background-color: var(--mobile-menu-a-bg-color);
+    color: var(--nav-a-active-color);
+    background-color: var(--nav-a-active-bg-color);
   }
