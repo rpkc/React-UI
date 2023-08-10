@@ -304,6 +304,6 @@
     background-color: rgba(102, 153, 246, 0.185);  
   }
   .mininav .active {
-    color: var(--nav-a-active-color);
+    color: rgb(255, 94, 0);
     background-color: var(--nav-a-active-bg-color);
   }
