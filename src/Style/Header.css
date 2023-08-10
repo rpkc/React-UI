@@ -1,5 +1,5 @@
 /*
-   @ version 15.02.2023
+   @ version 09.08.2023
 */
 
 .menu{
@@ -87,8 +87,15 @@
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .menu .menu-list .menu-item:first-child a[info]:focus::after,
-  .menu .menu-list .menu-item:first-child a[info]:hover::after{
+  .menu .menu-list .menu-item:nth-child(3) a[info]:focus::after,
+  .menu .menu-list .menu-item:nth-child(3) a[info]:hover::after{
+    
+    height: 2rem;
+    width: 6rem;
+  }
+
+  .menu .menu-list .menu-item:nth-child(1) a[info]:focus::after,
+  .menu .menu-list .menu-item:nth-child(1) a[info]:hover::after{
     
     height: 2rem;
     width: 6rem;
