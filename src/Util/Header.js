@@ -15,9 +15,9 @@ return(
     <div className="menu">
         <div className="header">C A L C U L O N</div>
         <ul className="menu-list">
-          <li className="menu-item"><NavLink to='/calculator' info="Calculators" activeClassName="active"><i class="fa fa-calculator" aria-hidden="true"></i></NavLink></li>
+          <li className="menu-item"><NavLink to='/projects' info="Research" activeClassName="active"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></NavLink></li>
           <li className="menu-item"><NavLink to='/archives' info="Archives" activeClassName="active"><i class="fa fa-archive" aria-hidden="true"></i></NavLink></li>
-          <li className="menu-item"><NavLink to='/projects' info="Projects" activeClassName="active"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></NavLink></li>
+          <li className="menu-item"><NavLink to='/calculator' info="For Selling" activeClassName="active"><i class="fa fa-tag" aria-hidden="true"></i></NavLink></li>
           <li className="menu-item"><button className="menuButton" onClick={openMenu} info="Menu"><i class="fa fa-th" aria-hidden="true"></i></button></li>
         </ul>
         <div id="miniNav" class="mininav" tabIndex={0}>
